@@ -266,6 +266,25 @@ return [
             'icon' => 'far fa-fw fa-bookmark',
             'active' =>['admin/tags*']
         ],
+        [
+            'text' => 'Tags-18000',
+            'route'  => 'admin.tag18s.index',
+            'icon' => 'far fa-fw fa-bookmark',
+            'active' =>['admin/tag18s*']
+        ],
+        [
+            'text' => 'Fallas',
+            'route'  => 'admin.fallas.index',
+            'icon' => 'far fa-fw fa-bookmark',
+            'active' =>['admin/fallas*']
+        ],
+        [
+            'text' => 'Trabajos',
+            'route'  => 'admin.trabajos.index',
+            'icon' => 'far fa-fw fa-bookmark',
+            'active' =>['admin/trabajos*']
+        ],
+
 
         ['header' => 'OPCIONES DE BLOG'],
         [

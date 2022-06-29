@@ -31,18 +31,16 @@
 
     @foreach ($tags as $tag)
 
-    <label class="mr-2">
-        {!! Form::checkbox('tags[]', $tag->id, null) !!}
-        {{ $tag->name}}
-    </label>
+        <label class="mr-2">
+            {!! Form::checkbox('tags[]', $tag->id, null) !!}
+            {{ $tag->name}}
+        </label>
 
     @endforeach
 
-
-
     @error('tags')
-    <br>
-    <small class="text-danger">{{$message}}</small>
+        <br>
+        <small class="text-danger">{{$message}}</small>
     @enderror
 
 </div>
@@ -72,11 +70,10 @@
           @isset ($post->image)
                 <img id="picture" src="{{ Storage::url($post->image->url) }}" alt="">
             @else
-                 <img id="picture" src="https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_960_720.jpg" alt="">
+            <img id="picture" src="https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_960_720.jpg" alt="">
           @endif
         </div>
     </div>
-
 
     <div class="col">
         <div class="form-group">
@@ -89,12 +86,12 @@
 
         </div>
 
-        @error('file')
-            <span class="text-danger">{{message}}</span>
-        @enderror
+            @error('file')
+                <span class="text-danger">{{message}}</span>
+            @enderror
 
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus neque, possimus aperiam dolorem ullam optio modi fugiat reiciendis omnis, praesentium ipsa deserunt. Atque nobis a eaque aperiam modi aspernatur eum.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus neque, possimus aperiam dolorem ullam optio modi fugiat reiciendis omnis, praesentium ipsa deserunt. Atque nobis a eaque aperiam modi aspernatur eum.</p>
 
     </div>
 

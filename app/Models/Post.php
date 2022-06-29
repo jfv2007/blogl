@@ -11,6 +11,7 @@ class Post extends Model
 {
     use HasFactory;
 
+    /* evita los campos de llenado masivo */
     protected $guarded = ['id','created_at','updated_at'];
 
     //Relacion uno a muchos inversa

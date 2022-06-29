@@ -45,11 +45,12 @@ class PostController extends Controller
      */
     public function store(PostRequest $request)
     {
-        /*  return $request->file('file');  */
+         /*  return $request->all(); */
+         /* return $request->file('file'); */
 
           /* return Storage::put('posts', $request->file('file')); */
 
-         $post = Post::create($request->all());
+         $post = Post::create($request->all()); /*crear un nuevo registro en post */
 
          if($request->file('file')){
             $url = Storage::put('public/posts', $request->file('file'));
